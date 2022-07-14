@@ -1,0 +1,280 @@
+* {
+  font-family: "DM Sans", sans-serif;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+a:hover, a:focus, a:active, a:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+h1 {
+  margin-bottom: -20px;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
+h4 {
+  font-weight: normal !important;
+}
+h4 > span {
+  font-weight: bold;
+}
+
+h5 {
+  margin-top: 15px !important;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #fa3c83;
+}
+input {
+  height: 37px;
+}
+select {
+  height: 37px;
+}
+.logo {
+  width: 90px;
+  border-radius: 100px;
+  border: 2px solid rgb(53, 147, 255);
+  padding: 15px;
+  position: relative;
+  left: 5px;
+}
+
+.logo :hover {
+  cursor: pointer;
+}
+
+.logo-text {
+  font-family: "DM Sans", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 12px;
+  width: 400px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 320px;
+  }
+}
+
+
+
+.form-control {
+  border: none;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.form-select {
+  border: none;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.btn-submit {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.14);
+}
+
+.btn-submit :hover {
+  color: white !important;
+}
+
+input:focus, select:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  border: none
+}
+#name:focus {
+  outline: none;
+  border: none;
+  outline: none !important;
+  outline-width: 0 !important;
+}
+
+.form-control:focus,
+select:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.card-body {
+  padding: 0px 10px;
+}
+
+.inner-container {
+  background-color: #fff;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 30px;
+  padding-bottom: 25px;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 30vw;
+}
+
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-btn {
+  background: #fa3c83;
+  background: linear-gradient(deg, #f02840, #ff68a0);
+  animation: gradient 3s ease infinite;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 14px;
+  min-width: 134px;
+  max-width: 400px;
+}
+
+.custom-btn:hover {
+  background-color: #f02840;
+  background: linear-gradient(90deg, #f02840, #f02840);
+
+  
+}
+
+.custom-btn:hover #arrow {
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.loader-spin {
+  animation: spinAnim 1s infinite;
+}
+
+#select-clg {
+  box-shadow: none;
+  outline: none;
+  outline-width: 0;
+}
+
+@keyframes spinAnim {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .inner-container {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inner-container {
+    width: 90vw;
+  }
+}
+/* @media screen and (max-width: 320px) {
+  .inner-container {
+    width: 100vw;
+  }
+} */
+
+body {
+  /* background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #0060ff, #05bfce, #fecd11); */
+  
+  background: linear-gradient(-45deg, #f02840, #ff68a0, #B75CFF); 
+  
+  background-size: 200% 200%;
+  -webkit-animation: gradientMove 5s ease infinite;
+  -moz-animation: gradientMove 5s ease infinite;
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientFlicker {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes gradientMove {
+  0%{background-position:10% 0%}
+  50%{background-position:46% 52%}
+  100%{background-position:10% 0%}
+}
+@-moz-keyframes gradientMove {
+  0%{background-position:10% 0%}
+  50%{background-position:46% 52%}
+  100%{background-position:10% 0%}
+}
+@keyframes gradientMove { 
+  0%{background-position:10% 0%}
+  50%{background-position:46% 52%}
+  100%{background-position:10% 0%}
+}
+
