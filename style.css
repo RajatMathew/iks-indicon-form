@@ -1,7 +1,8 @@
 * {
   font-family: "DM Sans", sans-serif;
 }
-html, body {
+html,
+body {
   height: 100%;
   overflow-x: hidden;
 }
@@ -11,7 +12,10 @@ a {
   color: inherit !important;
 }
 
-a:hover, a:focus, a:active, a:visited {
+a:hover,
+a:focus,
+a:active,
+a:visited {
   text-decoration: none !important;
   color: inherit !important;
 }
@@ -79,8 +83,6 @@ select {
   }
 }
 
-
-
 .form-control {
   border: none;
   border-radius: 10px;
@@ -106,10 +108,11 @@ select {
   color: white !important;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   outline: none !important;
   outline-width: 0 !important;
-  border: none
+  border: none;
 }
 #name:focus {
   outline: none;
@@ -153,12 +156,10 @@ select:focus {
   width: 30vw;
 }
 
-
-
 .container {
   margin-left: auto;
   margin-right: auto;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,8 +167,8 @@ select:focus {
 }
 
 .custom-btn {
-  background: #fa3c83;
-  background: linear-gradient(deg, #f02840, #ff68a0);
+  background: #2b6f8a;
+  /* background: linear-gradient(deg, #f02840, #ff68a0); */
   animation: gradient 3s ease infinite;
   border-radius: 15px;
   border: none;
@@ -179,10 +180,8 @@ select:focus {
 }
 
 .custom-btn:hover {
-  background-color: #f02840;
-  background: linear-gradient(90deg, #f02840, #f02840);
-
-  
+  background-color: #0e4a61;
+  /* background: linear-gradient(90deg, #f02840, #f02840); */
 }
 
 .custom-btn:hover #arrow {
@@ -241,9 +240,9 @@ select:focus {
 body {
   /* background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
   background: linear-gradient(-45deg, #0060ff, #05bfce, #fecd11); */
-  
-  background: linear-gradient(-45deg, #f02840, #ff68a0, #B75CFF); 
-  
+
+  background: linear-gradient(-45deg, #60addc, #2b6f8a, #b75cff);
+
   background-size: 200% 200%;
   -webkit-animation: gradientMove 5s ease infinite;
   -moz-animation: gradientMove 5s ease infinite;
@@ -263,18 +262,35 @@ body {
 }
 
 @-webkit-keyframes gradientMove {
-  0%{background-position:10% 0%}
-  50%{background-position:46% 52%}
-  100%{background-position:10% 0%}
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 46% 52%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
 @-moz-keyframes gradientMove {
-  0%{background-position:10% 0%}
-  50%{background-position:46% 52%}
-  100%{background-position:10% 0%}
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 46% 52%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
-@keyframes gradientMove { 
-  0%{background-position:10% 0%}
-  50%{background-position:46% 52%}
-  100%{background-position:10% 0%}
+@keyframes gradientMove {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 46% 52%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
-
