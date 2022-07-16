@@ -243,10 +243,10 @@ body {
 
   background: linear-gradient(151deg, #fc9025, #05f161);
 
-  background-size: 200% 200%;
-  -webkit-animation: gradientMove 5s ease infinite;
-  -moz-animation: gradientMove 5s ease infinite;
-  animation: gradientMove 5s ease infinite;
+  background-size: 120% 120%;
+  -webkit-animation: gradientMove 10s ease infinite;
+  -moz-animation: gradientMove 10s ease infinite;
+  animation: gradientMove 10s ease infinite;
 }
 
 @keyframes gradientFlicker {
